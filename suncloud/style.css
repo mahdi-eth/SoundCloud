@@ -1,0 +1,508 @@
+@import url(../modules/responsive.css);
+
+/*****************************
+CSS RESET
+*****************************/
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+}
+
+input {
+    border: none;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/*****************************
+Utiles
+*****************************/
+
+.container-w {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 .2rem .4rem #33333310;
+}
+
+.container-g {
+    max-width: 1240px;
+    margin: 0 auto;
+    background: #f2f2f2;
+}
+
+/* .btn-orange {
+
+} */
+
+/****************/
+
+.font-4 {
+    font-size: .4rem;
+}
+
+.font-10 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.font-12 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.font-14 {
+    font-size: 1.4rem;
+}
+
+
+.font-16 {
+    font-size: 1.6rem;
+}
+
+.font-18 {
+    font-size: 1.8rem;
+}
+
+.font-20 {
+    font-size: 2rem;
+}
+
+.font-22 {
+    font-size: 2.2rem;
+}
+
+.font-24 {
+    font-size: 2.4rem;
+}
+
+/****************/
+
+.font-w-400 {
+    font-weight: 400;
+}
+
+.font-w-500 {
+    font-weight: 400;
+}
+
+/*****************************
+Header
+*****************************/
+
+
+.header {
+    background-image: url(https://a-v2.sndcdn.com/assets/images/sc_landing_header_web_featured_artists-8081257b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    border-top: .4rem solid #f50;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .9rem;
+}
+
+.left-logo {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    padding-left: 2rem;
+    align-items: flex-start;
+}
+
+.left-logo img {
+    height: 4.6rem;
+    width: 3.4rem;
+    margin-top: -1.7rem;
+}
+
+.left-logo h1 {
+    letter-spacing: .07rem;
+}
+
+.nav-right {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.sign-in {
+    padding: .2rem 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: .05rem solid rgba(255, 255, 255, .7);
+    border-radius: .25rem;
+    transition: .2s;
+}
+
+.sign-in:hover {
+    border: .05rem solid rgba(255, 255, 255, .9);
+}
+
+.crate-account {
+    padding: .2rem 1rem;
+    color: #fff;
+    background-color: #f50;
+    border: .05rem solid #f50;
+    border-radius: .25rem;
+}
+
+.for-crateors {
+    padding: .2rem 1rem .2rem 1rem;
+    color: #fff;
+}
+
+.header-text {
+    margin-top: 5.2rem;
+    padding: 0 1.6rem 7.55rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.upload-button {
+    background-color: #f50;
+    padding: .6rem;
+    border-radius: .25rem;
+}
+
+/*****************************
+Body
+*****************************/
+
+/*****seaction-A*****/
+
+.seaction-A {
+    color: #333;
+    padding-bottom: 2rem;
+}
+
+.bar {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bar input {
+    padding: 1rem 1rem;
+    border-radius: .25rem;
+    width: 46.29%;
+    min-width: 311px;
+    background-color: #f2f2f2;
+    background-image: url(./images/search-dbfe5cbb.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+.bar .input-responsive {
+    display: none;
+}
+
+.Upload-your-own {
+    background-color: #f50;
+    padding: 1rem 1rem;
+    border-radius: .25rem;
+    color: #fff;
+}
+
+
+.music-h2 {
+    text-align: center;
+}
+
+.music-photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.music-photo div {
+    width: 15%;
+}
+
+.music-photo div img {
+    width: 100%;
+    height: 12.9rem;
+}
+
+.music-photo div .song-name {
+    display: block;
+    height: 1.8rem;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+.music-photo div .artist-name {
+    font-size: .4rem;
+    font-weight: 200;
+}
+
+.music-btn {
+    background-color: #f50;
+    padding: 1rem 1rem;
+    border-radius: .25rem;
+    color: #fff;
+}
+
+.main-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem auto;
+    padding-bottom: 4rem;
+}
+
+/*****seaction-B*****/
+
+
+.section-B-row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.left-side {
+    width: 58.8%;
+}
+
+.left-side img {
+    background-color: #333;
+}
+
+.right-side {
+    margin-top: -3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 26.2%;
+}
+
+.right-side h3::after {
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    width: 22.5%;
+    height: .16rem;
+    background-image: linear-gradient(90deg, #7d01a1, #f30 50%, #f50);
+}
+
+.right-side .links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.right-side .links img {
+    width: 8rem;
+    height: 2.75rem;
+}
+
+/*****seaction-C*****/
+
+.section-c {
+    background-image: url(https://a-v2.sndcdn.com/assets/images/hp_creator_image_featured_artists-798050ae.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.section-c-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 41.9%;
+    margin: 0 4rem;
+    padding: 3.5rem 0;
+}
+
+.section-c-btn {
+    border: .1rem solid #e5e5e5;
+    border-radius: .25rem;
+    padding: .5rem 1.3rem;
+}
+
+
+/*****************************
+footer
+*****************************/
+
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5.05rem;
+    padding-bottom: 5.05rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-items p {
+    text-align: center;
+}
+
+.footer-btn {
+    padding: .8rem 3rem;
+    color: #fff;
+    background-color: #f50;
+    border-radius: .25rem;
+}
+
+.last-column-btn {
+    background-color: #fff;
+    padding: .4rem 1.3rem;
+    margin-left: 1rem;
+    border: .1rem solid #e5e5e5;
+    border-radius: .25rem;
+}
+
+
+
+
+/*****************************
+responsive
+*****************************/
+
+@media only screen and (max-width:1200px) {
+
+    .container-w,
+    .container-g {
+        margin: 0 32px;
+    }
+
+    .section-B-row-1 {
+        flex-direction: column-reverse;
+        margin-top: 8rem;
+    }
+
+    .right-side {
+        width: auto;
+        margin: 0 8%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .bar {
+        flex-direction: column;
+    }
+
+    .bar span {
+        display: none;
+    }
+
+    .music-photo div {
+        width: 30%;
+    }
+
+    .section-B-row-1 {
+        margin: 4rem 0;
+        gap: 0;
+    }
+
+    .left-side img {
+        display: none;
+    }
+
+    .section-c {
+        background: url(./images/oie_fX2eMqwbpbgp.jpg);
+        text-align: center;
+    }
+
+    .section-c-data {
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .footer-items {
+        padding: 32px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .row-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .left-logo {
+        padding-left: 0;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header-text {
+        margin-top: 2.6rem;
+    }
+
+    .music-photo div {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .bar input {
+        display: none;
+    }
+
+    .bar .input-responsive {
+        display: block;
+        width: 96.6%;
+        min-width: auto;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+    .header-text {
+        display: none;
+    }
+
+    .nav-right {
+        padding-bottom: 3rem;
+    }
+
+    .music-photo div {
+        width: 90%;
+    }
+
+}
